@@ -1,1 +1,69 @@
-/* You can add global styles to this file, and also import other style files */
+@layer tw-base, primeng, tw-components, tw-utilities, tw-variants;
+
+@import "primeicons/primeicons.css";
+
+
+
+// Please take note of the order in which these are imported
+@import "tailwindcss/base.css" layer(tw-base);
+@import "primeng/resources/primeng.min.css";
+@import "primeng/resources/themes/tailwind-light/theme.css";
+@import "tailwindcss/components.css" layer(tw-components);
+@import "tailwindcss/utilities.css" layer(tw-utilities);
+@import "tailwindcss/variants.css" layer(tw-variants);
+
+@layer tw-base {
+  * {
+    @apply transition-all duration-300 ease-in-out;
+  }
+}
+
+@layer tw-components {
+    // tailwind component classes here
+}
+
+@layer tw-utilities {
+    // tailwind utitlity classes here
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*, 
+*::after, 
+*::before {
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.py-24px {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.px-24px {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.pt-24px {
+    padding-top: 24px;
+}
+.pr-24px {
+    padding-right: 24px;
+}
+.pl-24px {
+    padding-left: 24px;
+}
+.pb-24px {
+    padding-bottom: 24px;
+}
+.p-24px {
+    padding: 24px;
+}
+
+.p-16px {
+    padding: 16px;
+}
+.h-full {
+    height: 100% !important;
+}
